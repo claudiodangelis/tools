@@ -129,6 +129,7 @@ if(isset($_POST['indent'])){
 		$input_code_orig=$input_code;
 		$input_code=explode("\n",$input_code);
 		for($i=0;$i<count($input_code);$i++){
+			//This line does the actual trick: every leading whitespace on each line of input code is trimmed and replaced with the &#8194 character
 			$output_code=$output_code."\n".str_pad($input_code_trimmed=ltrim($input_code[$i]), strlen($input_code_trimmed) + 6*((strlen($input_code[$i]) - strlen($input_code_trimmed))), "&#8194", STR_PAD_LEFT);
 		}
 	
