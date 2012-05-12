@@ -4,6 +4,9 @@ Stickies.app Exporter
 Original author Claudio Dawson d'Angelis
 http://www.claudiodangelis.it
 info@claudiodangelis.it
+
+NOTE: To get it working, you must enable access fir assustuve devices in
+"System Preferences" -> "Universal Access"
 *)
 
 on appIsRunning(appName)
